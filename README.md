@@ -7,7 +7,7 @@ La asignatura gira alrededor de los patrones de diseño, así que cada ejercicio
 ## Las prácticas
 
 **P1 · Patrones de diseño en Java y Python.**
-- **Ejercicio 1 · Factoría abstracta (Java).** Carreras de bicicletas de montaña y de carretera, en las que cada factoría crea tanto la carrera como sus bicicletas.
+- **Ejercicio 1 · Factoría abstracta (Java).** Carreras de bicicletas de montaña y de carretera, en las que cada factoría crea tanto la carrera como sus bicicletas, y las dos carreras se ejecutan a la vez en hebras distintas.
 - **Ejercicio 2 · Decorador (Python).** Un modelo de lenguaje de Hugging Face resume un texto, y los decoradores le añaden traducción y expansión sin cambiar la clase original.
 - **Ejercicio 3 · Estrategia (Python).** Un *scraper* de citas que puede funcionar con Selenium o con Beautiful Soup, y la estrategia se elige al ejecutarlo.
 - **Ejercicio 4 · Filtros de intercepción (Java).** Antes de llegar a su destino, el correo y la contraseña de un cliente pasan por una cadena de filtros, que comprueba que el correo sea válido y que la contraseña no esté vacía, tenga letras y números y la longitud mínima.
@@ -18,6 +18,12 @@ La asignatura gira alrededor de los patrones de diseño, así que cada ejercicio
 **P3 · Sistema bancario con pruebas.** Cuentas y transacciones (depósitos, retiradas y transferencias) en Dart, con pruebas unitarias en `test/bank_test.dart`. Las pruebas no solo comprueban que el saldo cambia bien, sino también que el banco da error cuando se intenta ingresar o retirar una cantidad negativa o sacar más dinero del que hay.
 
 **P4 · Triaccount.** Una aplicación para repartir los gastos de un grupo, al estilo de Tricount. La app en Flutter tiene registro e inicio de sesión, grupos y gastos, y se conecta a una API hecha con Ruby on Rails. Aquí se juntan varios patrones: los gastos pasan por una cadena de filtros antes de guardarse (sin palabrotas, sin fechas en el futuro, con al menos un participante y con foto si el gasto pasa de 50), y la forma de repartir el dinero es una estrategia que se puede cambiar: a partes iguales, por partes o por cantidades.
+
+## Documentación
+
+- **[PRACTICA_1_Desarrollo_de_software.pdf](Practica1/PRACTICA_1_Desarrollo_de_software.pdf)** · La memoria de la Práctica 1. Para cada ejercicio explica qué patrón se ha usado y por qué, cómo funciona y cómo está implementado, con fragmentos de código y la salida del programa. Por ejemplo, cómo se lanzan las carreras en hebras en el ejercicio 1, cómo se encadenan los decoradores sobre el modelo de lenguaje en el 2, y cómo se ejecuta el *scraper* con Selenium y con Beautiful Soup en el 3.
+- **[memoria_ejercicio5.pdf](Practica1/Ejercicio5_Adam/memoria_ejercicio5.pdf)** · La memoria del ejercicio individual de Adam. Explica por qué el adaptador es el patrón adecuado, las clases y la pequeña ventana hecha con Tkinter para convertir millas a kilómetros.
+- **[P4.pdf](triaccount/entrega/P4.pdf)** · El planteamiento y los requisitos de Triaccount: qué puede hacer un usuario, cómo funcionan los grupos, los gastos, los balances y los reembolsos, qué patrones se iban a usar (filtros de intercepción para añadir gastos y estrategia para repartirlos) y las órdenes de Rails para crear los modelos. El diagrama de clases está en [diagrama.jpeg](triaccount/entrega/diagrama.jpeg).
 
 ## Cómo ejecutarlo
 
@@ -79,4 +85,4 @@ banking_service_adam/   <- versión de Adam del sistema bancario, conectada a un
 
 ## Créditos
 
-Fernando Lanzarot Facio y Adam Navarro Megías. Copia del repositorio original [Adman23/practicasDS](https://github.com/Adman23/practicasDS).
+Fernando Lanzarot Facio y Adam Navarro Megías. En la Práctica 1 también participó Iván Molina. Copia del repositorio original [Adman23/practicasDS](https://github.com/Adman23/practicasDS).
